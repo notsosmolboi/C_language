@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<coinio.h>
+void main(){
+    int a,b,big,set;
+    printf("enter A :");
+    scanf("%d",&a);
+    printf("enter B :");
+    scanf("%d",&b);
+    big=a>b?a:b;
+    step=big;
+    while(1){
+        if(c%a==0 && c%b==0){
+            printf("the LCM is %d ",big);
+            break;
+        }
+        else
+            c=c+step;
+    }
+}
