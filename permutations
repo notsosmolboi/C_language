@@ -1,0 +1,20 @@
+#include <stdio.h>
+long int fact(long int n){
+    long int result=0;
+    if(n==0){
+        result=1;
+        return result;
+    }
+    return n*fact(n-1);
+}
+void main() {
+   long int n,r,result;
+   printf("Enter no of students : ");
+   scanf("%ld",&n);
+   printf("Enter no of chairs : ");
+   scanf("%ld",&r);
+   r=n-r;
+   n=fact(n);
+   r=fact(r);
+   printf("The number of ways to be seated is %ld",n/r);
+}
