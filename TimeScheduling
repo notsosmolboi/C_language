@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct schedule{
+    char name[20];
+    int slot=0;
+};
+void main(){
+    char ch;
+    int n=0;
+    struct schedule timeslot[5];
+    while(ch!=13){
+        printf("\n\t\tSCHEDULE");
+        printf("\n\t10:00 - slot 1");
+        printf("\n\t11:00 - slot 2");
+        printf("\n\t12:00 - slot 3");
+        printf("\n\t2:00 - slot 4");
+        printf("\n\t3:00 - slot 5");
+        printf("\n\t4:00 - slot 6");
+        printf("\n Enter slot number : ");
+        scanf("%d",&n);
+        if(n>0&&n<7){
+            if(timeslot[n].slot==0){
+                printf("\nEnter git")
+            }
+        }
+    }
+}
